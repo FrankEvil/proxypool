@@ -20,7 +20,7 @@ func connect() (err error) {
 	if url := os.Getenv("DATABASE_URL"); url != "" {
 		dsn = url
 	}
-	DB, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
+	DB, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err == nil {
 		fmt.Println("DB connect success: ", DB.Name())
 	}
