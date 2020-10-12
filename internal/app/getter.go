@@ -49,6 +49,6 @@ func initGetters(sourceFiles []string) {
 			}
 		}
 	}
-	fmt.Println("Getter count:", len(Getters))
+	fmt.Println(" Getter count:", len(Getters))
 	cache.GettersCount = len(Getters)
 }
